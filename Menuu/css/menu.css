@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Russo+One&display=swap');
+
+
 /* vloeiend scrollen zie: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp  */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -54,6 +63,14 @@ li a {
     background-image: url("../afb/tiramisu.jpg");
 }
 
+li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -76,6 +93,7 @@ section header {
     padding: 30px;
 }
 h1, h2, h4 {
+    font-family: 'Russo One', sans-serif;
     color: white;
     text-align: center; 
     text-shadow: 0 0 13px darkslategrey; 
